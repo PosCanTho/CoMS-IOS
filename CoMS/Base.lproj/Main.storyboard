@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoMS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,56 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AGo-Im-3hd">
+                                <rect key="frame" x="36" y="220" width="303" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="2sO-00-nn0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CRT-d0-xCy">
+                                <rect key="frame" x="36" y="295" width="303" height="45"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlL-ef-FHC">
+                                <rect key="frame" x="36" y="370" width="303" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.32406253329507517" blue="0.34738131769804359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.92060597182123027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lVL-6f-EIL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AGo-Im-3hd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="9LI-FM-rJE"/>
+                            <constraint firstItem="CRT-d0-xCy" firstAttribute="height" secondItem="AGo-Im-3hd" secondAttribute="height" id="CYA-Dk-wRu"/>
+                            <constraint firstItem="OlL-ef-FHC" firstAttribute="height" secondItem="CRT-d0-xCy" secondAttribute="height" id="E1Y-IN-oPI"/>
+                            <constraint firstItem="OlL-ef-FHC" firstAttribute="top" secondItem="CRT-d0-xCy" secondAttribute="bottom" constant="30" id="ER7-5T-0tT"/>
+                            <constraint firstItem="OlL-ef-FHC" firstAttribute="leading" secondItem="CRT-d0-xCy" secondAttribute="leading" id="FId-wV-h8T"/>
+                            <constraint firstItem="CRT-d0-xCy" firstAttribute="leading" secondItem="AGo-Im-3hd" secondAttribute="leading" id="FNV-5Z-t9P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AGo-Im-3hd" secondAttribute="trailing" constant="20" id="RSG-vm-x40"/>
+                            <constraint firstItem="CRT-d0-xCy" firstAttribute="trailing" secondItem="AGo-Im-3hd" secondAttribute="trailing" id="S2V-qg-dQi"/>
+                            <constraint firstItem="AGo-Im-3hd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="SlV-jc-2vr"/>
+                            <constraint firstItem="CRT-d0-xCy" firstAttribute="top" secondItem="AGo-Im-3hd" secondAttribute="bottom" constant="30" id="VUf-PV-Zug"/>
+                            <constraint firstItem="OlL-ef-FHC" firstAttribute="trailing" secondItem="CRT-d0-xCy" secondAttribute="trailing" id="XVF-ev-PVQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tfPassWord" destination="CRT-d0-xCy" id="0wV-LC-VW4"/>
+                        <outlet property="tfUserName" destination="AGo-Im-3hd" id="pgE-G7-xpg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
