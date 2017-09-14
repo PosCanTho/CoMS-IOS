@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     var menuNameArray:Array = [String]()
     var icon:Array = [String]()
     var iconImage:Array = [UIImage]()
@@ -29,6 +29,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var notificationViewController: NotificationViewController!
     var settingViewController: SettingViewController!
     var bookmarkController: BookmarkController!
+    var packageController: PackageController!
     
     
     @IBAction func showMenu(_ sender: Any) {
@@ -44,13 +45,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         createListViewController()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     func setUpData(){
-        menuNameArray = ["Home","Schedule","Conference","Bookmark","Profile","Message","Notification","Setting","Sign out"]
+        menuNameArray = ["Home","Schedule","Conference","Bookmark","Profile","Message","Notification","Map","Package","Setting","Sign out"]
         
-        icon = ["1","2","3","4","5","6","7","8","9"]
+        icon = ["1","2","3","4","5","6","7","8","9","10","11"]
         
-//        iconImage = [UIImage(named: "ic_home")!,UIImage(named: "ic_calendar")!,UIImage(named: "ic_conference")!,UIImage(named: "ic_profile")!,UIImage(named: "ic_message")!,UIImage(named: "ic_notification")!,UIImage(named: "ic_settings")!,UIImage(named: "ic_logout")!]
-//        
+        //        iconImage = [UIImage(named: "ic_home")!,UIImage(named: "ic_calendar")!,UIImage(named: "ic_conference")!,UIImage(named: "ic_profile")!,UIImage(named: "ic_message")!,UIImage(named: "ic_notification")!,UIImage(named: "ic_settings")!,UIImage(named: "ic_logout")!]
+        //
     }
     
     func createListViewController(){
@@ -62,12 +67,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         notificationViewController = self.storyboard?.instantiateViewController(withIdentifier: "NotificationViewController") as! NotificationViewController
         settingViewController = self.storyboard?.instantiateViewController(withIdentifier: "SettingViewController") as! SettingViewController
         bookmarkController = self.storyboard?.instantiateViewController(withIdentifier: "BookmarkController") as! BookmarkController
+        packageController = self.storyboard?.instantiateViewController(withIdentifier: "PackageController") as! PackageController
     }
     
     func initUI(){
         tableMenu.delegate = self
         tableMenu.dataSource = self
-
+        
         viewMenu.isHidden = true
         viewMenu.dropColor()
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToGesture))
@@ -79,6 +85,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.view.addGestureRecognizer(swipeRight)
         self.viewMenu.addGestureRecognizer(swipeLeft)
     }
+    
+    
     
     func respondToGesture(gesture : UISwipeGestureRecognizer){
         switch gesture.direction {
@@ -105,7 +113,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func handeDismiss(){
-        UIView.animate(withDuration: 0.5) { 
+        UIView.animate(withDuration: 0.5) {
             self.blackView.alpha = 0
         }
         if show == true {
@@ -118,7 +126,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func showMenu() {
         viewMenu.isHidden = false
-        UIView.animate(withDuration: 0) { 
+        UIView.animate(withDuration: 0) {
             self.viewMenu.frame = CGRect(x: -327, y: 0, width: self.viewMenu.frame.width, height: self.view.frame.height)
         }
         UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
@@ -196,27 +204,58 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             self.addChildViewController(messgeViewController)
             self.view.addSubview(messgeViewController.view)
             self.navigationItem.title = "Message"
+            let newMessageButton = UIBarButtonItem(image: UIImage(named: "ic_add"), landscapeImagePhone: nil, style: .plain, target: self, action: #selector(self.addNewMessage))
+            newMessageButton.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            self.navigationItem.rightBarButtonItem = newMessageButton
             closeMenu()
             break
             
         case 6:
-            self.addChildViewController(notificationViewController)
-            self.view.addSubview(notificationViewController.view)
-            self.navigationItem.title = "Notification"
+            self.addChildViewController(messgeViewController)
+            self.view.addSubview(messgeViewController.view)
+            self.navigationItem.title = "Message"
+            let newMessageButton = UIBarButtonItem(image: UIImage(named: "ic_add"), landscapeImagePhone: nil, style: .plain, target: self, action: #selector(self.addNewMessage))
+            newMessageButton.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            self.navigationItem.rightBarButtonItem = newMessageButton
             closeMenu()
             break
             
         case 7:
+            print("Map")
+            break
+            
+        case 8:
+            self.addChildViewController(packageController)
+            self.view.addSubview(packageController.view)
+            self.navigationItem.title = "Package"
+            self.navigationItem.rightBarButtonItem = nil
+            closeMenu()
+            break
+            
+        case 9:
             self.addChildViewController(settingViewController)
             self.view.addSubview(settingViewController.view)
             self.navigationItem.title = "Setting"
             closeMenu()
             break
-        case 8:
+        case 10:
             print("Sign out")
         default:
             break
-        }    }
+        }
+    }
+    
+    public func addNewMessage(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let newMessageController = storyboard.instantiateViewController(withIdentifier: "NewMessageController") as! NewMessageController
+       // self.present(newMessageController, animated: true, completion: nil)
+        
+        presentDetail(newMessageController)
+    }
+    
+    func removeNotification(){
+        
+    }
     
 }
 

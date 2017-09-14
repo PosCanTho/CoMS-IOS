@@ -17,14 +17,19 @@ class BookmarkController: UIViewController, UITableViewDelegate, UITableViewData
 
    
     @IBOutlet weak var tableView: UITableView!
+    var refresher: UIRefreshControl!
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+       initUI()
+    }
+    
+    func initUI(){
         self.tableView.estimatedRowHeight = 56
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        
+        refresher = setTableviewRefresh(title: NSAttributedString(string: "Load more..."), action: #selector(onRefresh), tableView: tableView)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -42,7 +47,11 @@ class BookmarkController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 56.0
+        return 57.0
+    }
+    
+    func onRefresh(){
+        refresher.endRefreshing()
     }
  
 

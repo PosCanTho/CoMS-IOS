@@ -9,6 +9,25 @@
 /* Begin PBXBuildFile section */
 		0F1CF79A0464F2D2E61BEF75 /* Pods_CoMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2F15FC78203FA0F868CF01 /* Pods_CoMS.framework */; };
 		36191FF71F62914F00C3360D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36191FF61F62914F00C3360D /* Utils.swift */; };
+		3624BEA81F666F97007EF19A /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3624BEA71F666F97007EF19A /* NewMessageController.swift */; };
+		3624BEAA1F668AB4007EF19A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3624BEA91F668AB4007EF19A /* UIViewController.swift */; };
+		3674E8111F6915EC0033CA6E /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3674E8061F6915EC0033CA6E /* Nunito-Bold.ttf */; };
+		3674E8121F6915EC0033CA6E /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3674E8071F6915EC0033CA6E /* Nunito-ExtraBold.ttf */; };
+		3674E8131F6915EC0033CA6E /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3674E8081F6915EC0033CA6E /* Nunito-ExtraLight.ttf */; };
+		3674E8141F6915EC0033CA6E /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3674E8091F6915EC0033CA6E /* Nunito-Italic.ttf */; };
+		3674E8151F6915EC0033CA6E /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3674E80A1F6915EC0033CA6E /* Nunito-Light.ttf */; };
+		3674E8161F6915EC0033CA6E /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3674E80B1F6915EC0033CA6E /* Nunito-Regular.ttf */; };
+		3674E8171F6915EC0033CA6E /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3674E80C1F6915EC0033CA6E /* Nunito-SemiBold.ttf */; };
+		3674E8181F6915EC0033CA6E /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3674E80D1F6915EC0033CA6E /* Roboto-Bold.ttf */; };
+		3674E8191F6915EC0033CA6E /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3674E80E1F6915EC0033CA6E /* Roboto-Light.ttf */; };
+		3674E81A1F6915EC0033CA6E /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3674E80F1F6915EC0033CA6E /* Roboto-Medium.ttf */; };
+		3674E81B1F6915EC0033CA6E /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3674E8101F6915EC0033CA6E /* Roboto-Regular.ttf */; };
+		3674E81D1F6A1CCF0033CA6E /* PackageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3674E81C1F6A1CCF0033CA6E /* PackageController.swift */; };
+		3674E81F1F6A1CE40033CA6E /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3674E81E1F6A1CE40033CA6E /* MapController.swift */; };
+		3674E8221F6A55470033CA6E /* ItemPackage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3674E8211F6A55470033CA6E /* ItemPackage.xib */; };
+		3674E8251F6A56020033CA6E /* ItemPackageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3674E8241F6A56020033CA6E /* ItemPackageView.swift */; };
+		36752D3B1F6784C500C109C3 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36752D3A1F6784C500C109C3 /* ChatController.swift */; };
+		36752D3D1F67E10800C109C3 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36752D3C1F67E10800C109C3 /* ChatViewController.swift */; };
 		367C96351F60D6170042DA7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367C96341F60D6170042DA7B /* AppDelegate.swift */; };
 		367C96371F60D6170042DA7B /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367C96361F60D6170042DA7B /* Test.swift */; };
 		367C963A1F60D6170042DA7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367C96381F60D6170042DA7B /* Main.storyboard */; };
@@ -63,6 +82,25 @@
 		03CBE34C8BD3DDF16B291CC6 /* Pods_CoMSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoMSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D29E435AAA2BD44C25A651 /* Pods-CoMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoMS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoMS/Pods-CoMS.debug.xcconfig"; sourceTree = "<group>"; };
 		36191FF61F62914F00C3360D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		3624BEA71F666F97007EF19A /* NewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		3624BEA91F668AB4007EF19A /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		3674E8061F6915EC0033CA6E /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		3674E8071F6915EC0033CA6E /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		3674E8081F6915EC0033CA6E /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		3674E8091F6915EC0033CA6E /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		3674E80A1F6915EC0033CA6E /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		3674E80B1F6915EC0033CA6E /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		3674E80C1F6915EC0033CA6E /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		3674E80D1F6915EC0033CA6E /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		3674E80E1F6915EC0033CA6E /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		3674E80F1F6915EC0033CA6E /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		3674E8101F6915EC0033CA6E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		3674E81C1F6A1CCF0033CA6E /* PackageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageController.swift; sourceTree = "<group>"; };
+		3674E81E1F6A1CE40033CA6E /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		3674E8211F6A55470033CA6E /* ItemPackage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemPackage.xib; sourceTree = "<group>"; };
+		3674E8241F6A56020033CA6E /* ItemPackageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPackageView.swift; sourceTree = "<group>"; };
+		36752D3A1F6784C500C109C3 /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		36752D3C1F67E10800C109C3 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		367C96311F60D6170042DA7B /* CoMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		367C96341F60D6170042DA7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		367C96361F60D6170042DA7B /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
@@ -145,6 +183,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3674E8051F6915CB0033CA6E /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3674E8061F6915EC0033CA6E /* Nunito-Bold.ttf */,
+				3674E8071F6915EC0033CA6E /* Nunito-ExtraBold.ttf */,
+				3674E8081F6915EC0033CA6E /* Nunito-ExtraLight.ttf */,
+				3674E8091F6915EC0033CA6E /* Nunito-Italic.ttf */,
+				3674E80A1F6915EC0033CA6E /* Nunito-Light.ttf */,
+				3674E80B1F6915EC0033CA6E /* Nunito-Regular.ttf */,
+				3674E80C1F6915EC0033CA6E /* Nunito-SemiBold.ttf */,
+				3674E80D1F6915EC0033CA6E /* Roboto-Bold.ttf */,
+				3674E80E1F6915EC0033CA6E /* Roboto-Light.ttf */,
+				3674E80F1F6915EC0033CA6E /* Roboto-Medium.ttf */,
+				3674E8101F6915EC0033CA6E /* Roboto-Regular.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		3674E8201F6A54CA0033CA6E /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				3674E8211F6A55470033CA6E /* ItemPackage.xib */,
+				3674E8241F6A56020033CA6E /* ItemPackageView.swift */,
+			);
+			name = xibs;
+			sourceTree = "<group>";
+		};
 		367C96281F60D6170042DA7B = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +235,8 @@
 		367C96331F60D6170042DA7B /* CoMS */ = {
 			isa = PBXGroup;
 			children = (
+				3674E8201F6A54CA0033CA6E /* xibs */,
+				3674E8051F6915CB0033CA6E /* fonts */,
 				3688EAEE1F66198E00D7728A /* extensions */,
 				3688EACB1F6617FE00D7728A /* cells */,
 				367C96741F6144DD0042DA7B /* untils */,
@@ -230,6 +297,11 @@
 				3688EAE51F66196C00D7728A /* NotificationViewController.swift */,
 				3688EAE61F66196C00D7728A /* SettingViewController.swift */,
 				3688EAF11F661B3400D7728A /* BookmarkController.swift */,
+				3624BEA71F666F97007EF19A /* NewMessageController.swift */,
+				36752D3A1F6784C500C109C3 /* ChatController.swift */,
+				36752D3C1F67E10800C109C3 /* ChatViewController.swift */,
+				3674E81C1F6A1CCF0033CA6E /* PackageController.swift */,
+				3674E81E1F6A1CE40033CA6E /* MapController.swift */,
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -281,6 +353,7 @@
 			children = (
 				3688EAEF1F6619BF00D7728A /* UIViewExtension.swift */,
 				3688EAF31F661F5E00D7728A /* UIImageViewExtension.swift */,
+				3624BEA91F668AB4007EF19A /* UIViewController.swift */,
 			);
 			name = extensions;
 			sourceTree = "<group>";
@@ -414,8 +487,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3674E81A1F6915EC0033CA6E /* Roboto-Medium.ttf in Resources */,
 				367C96421F60D6170042DA7B /* LaunchScreen.storyboard in Resources */,
+				3674E8221F6A55470033CA6E /* ItemPackage.xib in Resources */,
 				367C963F1F60D6170042DA7B /* Assets.xcassets in Resources */,
+				3674E8191F6915EC0033CA6E /* Roboto-Light.ttf in Resources */,
+				3674E8121F6915EC0033CA6E /* Nunito-ExtraBold.ttf in Resources */,
+				3674E8131F6915EC0033CA6E /* Nunito-ExtraLight.ttf in Resources */,
+				3674E8181F6915EC0033CA6E /* Roboto-Bold.ttf in Resources */,
+				3674E8171F6915EC0033CA6E /* Nunito-SemiBold.ttf in Resources */,
+				3674E81B1F6915EC0033CA6E /* Roboto-Regular.ttf in Resources */,
+				3674E8111F6915EC0033CA6E /* Nunito-Bold.ttf in Resources */,
+				3674E8141F6915EC0033CA6E /* Nunito-Italic.ttf in Resources */,
+				3674E8161F6915EC0033CA6E /* Nunito-Regular.ttf in Resources */,
+				3674E8151F6915EC0033CA6E /* Nunito-Light.ttf in Resources */,
 				367C963A1F60D6170042DA7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,16 +680,20 @@
 			files = (
 				3688EAF41F661F5E00D7728A /* UIImageViewExtension.swift in Sources */,
 				368291BB1F624B3100289798 /* User.swift in Sources */,
+				3624BEAA1F668AB4007EF19A /* UIViewController.swift in Sources */,
 				3688EAED1F66196C00D7728A /* SettingViewController.swift in Sources */,
 				368291B51F62401000289798 /* ConferenceMap.swift in Sources */,
 				3688EAE91F66196C00D7728A /* ConferenceViewController.swift in Sources */,
+				3674E8251F6A56020033CA6E /* ItemPackageView.swift in Sources */,
 				368291B71F62474900289798 /* Profile.swift in Sources */,
 				3688EAF21F661B3400D7728A /* BookmarkController.swift in Sources */,
+				3674E81D1F6A1CCF0033CA6E /* PackageController.swift in Sources */,
 				36191FF71F62914F00C3360D /* Utils.swift in Sources */,
 				367C96371F60D6170042DA7B /* Test.swift in Sources */,
 				367C966E1F611EBE0042DA7B /* LoginViewModel.swift in Sources */,
 				368291B31F622F1100289798 /* ResponseData.swift in Sources */,
 				367C96781F614D160042DA7B /* DebugLog.swift in Sources */,
+				3624BEA81F666F97007EF19A /* NewMessageController.swift in Sources */,
 				3688EAEA1F66196C00D7728A /* ProfileViewController.swift in Sources */,
 				367C96351F60D6170042DA7B /* AppDelegate.swift in Sources */,
 				367C96711F61353F0042DA7B /* DownloadAsyncTask.swift in Sources */,
@@ -614,9 +703,12 @@
 				367C96761F6144F90042DA7B /* Constants.swift in Sources */,
 				3688EADF1F66194300D7728A /* TableViewCellMenu.swift in Sources */,
 				3688EAEC1F66196C00D7728A /* NotificationViewController.swift in Sources */,
+				3674E81F1F6A1CE40033CA6E /* MapController.swift in Sources */,
+				36752D3B1F6784C500C109C3 /* ChatController.swift in Sources */,
 				3688EAF01F6619BF00D7728A /* UIViewExtension.swift in Sources */,
 				3688EAE71F66196C00D7728A /* ViewController.swift in Sources */,
 				3688EAE81F66196C00D7728A /* OnScheduleViewController.swift in Sources */,
+				36752D3D1F67E10800C109C3 /* ChatViewController.swift in Sources */,
 				368291B91F62485600289798 /* PastConference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
